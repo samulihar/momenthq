@@ -11,7 +11,7 @@ export const LandingHero: React.FC = () => {
         alt="Background"
       />
       <div className="relative bg-[rgba(0,0,0,0.55)] h-screen flex flex-col items-center px-4">
-        <div className="flex flex-col items-center absolute top-1/3 left-1/2 -translate-x-1/2">
+        <div className="flex flex-col items-center absolute top-1/4 left-1/2 -translate-x-1/2">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/273bb3e657114d9782e9ed4ee29ff07b/f03da01c258c15b8dbffdd8d65faac9b60816e7edf0bc15c2b3d92d29e2c2a92?placeholderIfAbsent=true"

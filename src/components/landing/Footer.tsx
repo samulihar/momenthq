@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="text-[rgba(253,252,247,1)] text-center absolute bottom-4 w-full">
+    <footer className="text-[rgba(253,252,247,1)] text-center absolute bottom-4 w-full z-10">
       <p className="text-xs mb-2">
         Built with{" "}
         <span className="text-[rgba(0,122,255,1)]">❤</span> by{" "}
