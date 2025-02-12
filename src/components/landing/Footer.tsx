@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           Sam
         </a>
       </p>
-      <p className="text-xs absolute bottom-4 right-4">:)</p>
+      <p className="text-xs absolute bottom-4 right-4 font-['Crayon_Libre'] text-[#007AFF]">:)</p>
     </footer>
   );
 };
