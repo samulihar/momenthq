@@ -1,13 +1,15 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import { LandingHero } from "@/components/landing/LandingHero";
+import { WaitlistForm } from "@/components/landing/WaitlistForm";
+import { Footer } from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="bg-[rgba(51,51,51,1)] min-h-screen overflow-hidden text-[rgba(253,252,247,1)]">
+      <LandingHero />
+      <WaitlistForm />
+      <Footer />
+    </main>
   );
 };
 
