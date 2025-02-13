@@ -1,13 +1,29 @@
-
 import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 
 export const WaitlistForm: React.FC = () => {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Submitted email:", email);
+
+    try {
+      const response = await fetch("https://usebasin.com/f/3c6626aca9e9", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ email }).toString(),
+      });
+
+      if (response.ok) {
+        setMessage("Thank you for joining the waitlist!");
+        setEmail(""); // Clear input field
+      } else {
+        setMessage("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setMessage("Network error. Please check your connection.");
+    }
   };
 
   return (
@@ -29,6 +45,8 @@ export const WaitlistForm: React.FC = () => {
       >
         Join the waitlist
       </button>
+      {message && <p className="text-white mt-2">{message}</p>}
     </form>
   );
 };
+
