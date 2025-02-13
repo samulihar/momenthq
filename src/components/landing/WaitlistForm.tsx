@@ -25,7 +25,7 @@ export const WaitlistForm: React.FC = () => {
       />
       <button
         type="submit"
-        className="bg-[rgba(63,63,63,1)] border w-[280px] max-w-full text-base text-center px-4 h-10 rounded-[10px] border-[rgba(253,252,247,1)] border-solid hover:bg-[rgba(73,73,73,1)] transition-colors"
+        className="bg-[rgba(63,63,63,1)] border w-[280px] max-w-full text-base text-center px-4 h-10 rounded-[10px] border-[rgba(253,252,247,1)] border-solid hover:bg-[rgba(73,73,73,1)] transition-colors font-['Crayon_Libre']"
       >
         Join the waitlist
       </button>
